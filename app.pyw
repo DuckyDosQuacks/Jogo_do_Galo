@@ -229,6 +229,14 @@ def RestartGame():
     button8['text'] = ''
     button9['text'] = ''
 
+    # Reeniciar Vencedor
+    global winner
+    winner = False
+
+    # Reeniciar Contador de Jogadas
+    global move_cont
+    move_cont = 0
+
 # Criar Botões
 button1 = Button(master=root, text='', font=('Monserrat', 14), width=8, height=4, command=lambda: ButtonPressed(button1))
 button2 = Button(master=root, text='', font=('Monserrat', 14), width=8, height=4, command=lambda: ButtonPressed(button2))
